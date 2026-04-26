@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#FFFFFF">
+
+  <title id="page-title">우리 결혼합니다</title>
+  <meta name="description" content="승우&amp;라연의 결혼식에 초대합니다. 🤵👰">
+  <meta property="og:type" content="website">
+  <meta property="og:title" id="og-title" content="승우&amp;라연의 결혼식에 초대합니다. 🤵👰">
+  <meta property="og:description" id="og-desc" content="2026. 08. 22. SAT 06:30 PM">
+  <meta property="og:url" content="https://wooyeon-wedding.netlify.app">
+  <meta property="og:image" content="https://wooyeon-wedding.netlify.app/assets/images/og-image.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Nanum+Myeongjo:wght@400;700&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="config.js"></script>
+</head>
+<body>
+
+  <!-- SECTION 1: HERO — Polaroid Style -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-polaroid-row">
+        <div class="hero-polaroid">
+          <div class="hero-photo">
+            <img class="hero-poster-img" id="hero-poster-img" src="assets/images/hero.png" alt="커플 사진">
+            <div class="hero-sparkles" aria-hidden="true">
+              <span class="sparkle sp-1">✦</span>
+              <span class="sparkle sp-2">◇</span>
+              <span class="sparkle sp-3">✦</span>
+              <span class="sparkle sp-4">◇</span>
+              <span class="sparkle sp-5">✧</span>
+              <span class="sparkle sp-6">◇</span>
+              <span class="sparkle sp-7">✦</span>
+              <span class="sparkle sp-8">✧</span>
+              <span class="sparkle sp-9">◇</span>
+            </div>
+          </div>
+          <div class="hero-caption-area">
+            <p class="hero-cap-date" id="polaroid-date"></p>
+            <p class="hero-cap-venue" id="hw-venue"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- SECTION 2: INVITATION -->
+  <section id="invitation" class="fade-in-section">
+    <div class="section-header">
+      <span class="sec-label">INVITATION</span>
+    </div>
+    <div class="section-inner">
+      <p class="invitation-text" id="invitation-text"></p>
+
+    </div>
+  </section>
+
+  <!-- SECTION 3: CALENDAR -->
+  <section id="calendar-sec" class="fade-in-section">
+    <div class="section-inner">
+      <p class="calendar-caption" id="calendar-caption"></p>
+      <div class="calendar-grid" id="calendar-grid"></div>
+    </div>
+  </section>
+
+
+  <!-- SECTION 5: GALLERY -->
+  <section id="gallery" class="fade-in-section">
+    <div class="section-header">
+      <span class="sec-label">GALLERY</span>
+    </div>
+
+    <div class="gallery-grid" id="gallery-grid">
+      <div class="gallery-empty" id="gallery-empty">
+        <p>config.js의 gallery 배열에 사진 경로를 입력하세요</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: CONTACTS & GIFT -->
+  <section id="contacts" class="fade-in-section">
+    <div class="section-header">
+      <span class="sec-label">CONTACT</span>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-person">
+        <p class="contact-role">신랑</p>
+        <p class="contact-name" id="contact-groom-name"></p>
+        <div class="contact-btns">
+          <a class="btn-contact-icon" id="btn-groom-phone" href="#">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.06 1.22 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92v2z"/></svg>
+          </a>
+          <a class="btn-contact-icon" id="btn-groom-sms" href="#">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-sep"></div>
+
+      <div class="contact-person">
+        <p class="contact-role">신부</p>
+        <p class="contact-name" id="contact-bride-name"></p>
+        <div class="contact-btns">
+          <a class="btn-contact-icon" id="btn-bride-phone" href="#">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.06 1.22 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92v2z"/></svg>
+          </a>
+          <a class="btn-contact-icon" id="btn-bride-sms" href="#">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="parents-panel" id="parents-panel"></div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+    <button class="lightbox-close" id="lightbox-close" aria-label="닫기">✕</button>
+    <img class="lightbox-img" id="lightbox-img" alt="갤러리 사진">
+    <button class="lightbox-prev" id="lightbox-prev" aria-label="이전">&#8249;</button>
+    <button class="lightbox-next" id="lightbox-next" aria-label="다음">&#8250;</button>
+    <p class="lightbox-counter" id="lightbox-counter"></p>
+  </div>
+
+  <!-- SECTION 6: VENUE & MAP -->
+  <section id="venue" class="fade-in-section">
+    <div class="section-header">
+      <span class="sec-label">LOCATION</span>
+    </div>
+
+    <div class="venue-title-block">
+      <p class="venue-name-display" id="venue-name-display"></p>
+      <p class="venue-address-display" id="venue-address-display"></p>
+    </div>
+
+    <div class="venue-map-embed" id="venue-map-embed"></div>
+
+    <div class="venue-nav-btns">
+      <a class="venue-nav-btn" id="btn-tmap-nav" href="#" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 32 32" width="30" height="30"><rect width="32" height="32" rx="8" fill="#E8002D"/><text x="16" y="24" text-anchor="middle" fill="white" font-size="20" font-weight="900" font-family="Arial,sans-serif">T</text></svg>
+        <span>티맵</span>
+      </a>
+      <a class="venue-nav-btn" id="btn-kakao-navi" href="#" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 32 32" width="30" height="30"><rect width="32" height="32" rx="8" fill="#FEE500"/><path d="M16 7C10.48 7 6 10.8 6 15.4c0 3 1.9 5.6 4.8 7.1L9.8 26l5.5-3.3c.2 0 .5.02.7.02 5.52 0 10-3.8 10-8.4C26 10.8 21.52 7 16 7z" fill="#3C1E1E"/></svg>
+        <span>카카오맵</span>
+      </a>
+      <a class="venue-nav-btn" id="btn-naver-nav" href="#" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 32 32" width="30" height="30"><rect width="32" height="32" rx="8" fill="#03C75A"/><text x="16" y="24" text-anchor="middle" fill="white" font-size="20" font-weight="900" font-family="Arial,sans-serif">N</text></svg>
+        <span>네이버맵</span>
+      </a>
+    </div>
+
+    <div class="venue-transport">
+      <div class="venue-transport-item">
+        <p class="venue-transport-title">지하철 안내</p>
+        <p class="venue-transport-desc">7호선, 분당선 강남구청역 2번출구(20m 직진, 버스 승강장 옆)에서 셔틀버스 이용</p>
+      </div>
+      <div class="venue-transport-item">
+        <p class="venue-transport-title">자가용 안내</p>
+        <p class="venue-transport-desc">강남구 논현동 241-3번지 SK허브블루(학동로 342) 지하주차장 이용</p>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- SECTION: GIFT -->
+  <section id="accounts" class="fade-in-section">
+    <p class="accounts-subtitle">신랑&amp;신부에게 축하의 마음 전달하기</p>
+
+    <div class="accounts-tabs">
+      <button class="tab-btn tab-active" data-tab="groom">신랑측</button>
+      <button class="tab-btn" data-tab="bride">신부측</button>
+    </div>
+    <div class="accounts-panel" id="acct-panel-groom"></div>
+    <div class="accounts-panel accounts-panel--hidden" id="acct-panel-bride"></div>
+  </section>
+
+  <div style="height:72px"></div>
+
+  <!-- BOTTOM ACTION BAR -->
+  <div class="bottom-bar" id="bottom-bar">
+    <button class="bottom-btn" id="btn-calendar">
+      <svg class="bottom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      <span>일정 등록</span>
+    </button>
+    <button class="bottom-btn" id="btn-link-copy">
+      <svg class="bottom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
+      <span>링크 복사</span>
+    </button>
+    <button class="bottom-btn" id="btn-kakao-share">
+      <svg class="bottom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+      <span>카카오톡</span>
+    </button>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Background Music -->
+  <audio id="bgm" preload="auto"></audio>
+  <button class="btn-music" id="btn-music" aria-label="배경음악 재생/정지" hidden>
+    <svg class="music-icon music-icon--note" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+    <svg class="music-icon music-icon--pause" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+  </button>
+
+  <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.2/kakao.min.js" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

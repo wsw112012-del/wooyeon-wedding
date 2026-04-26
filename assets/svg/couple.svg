@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 380" fill="none" stroke="#1C2B4A" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Groom (left) -->
+  <!-- Head -->
+  <ellipse cx="118" cy="72" rx="22" ry="24" stroke-width="2"/>
+  <!-- Hair (short, swept) -->
+  <path d="M96 62 Q100 48 118 50 Q136 48 140 62" stroke-width="2.5" fill="none"/>
+  <!-- Neck -->
+  <line x1="118" y1="96" x2="118" y2="108" stroke-width="2"/>
+  <!-- Shoulders & jacket -->
+  <path d="M85 130 Q90 108 118 108 Q146 108 151 130" stroke-width="2"/>
+  <!-- Jacket lapels -->
+  <path d="M107 108 L112 128 L118 120 L124 128 L129 108" stroke-width="1.8"/>
+  <!-- Bow tie -->
+  <path d="M112 112 L116 116 L112 120 M124 112 L120 116 L124 120" stroke-width="1.8"/>
+  <circle cx="118" cy="116" r="2" stroke-width="1.5"/>
+  <!-- Arms -->
+  <path d="M85 130 Q78 155 80 178" stroke-width="2"/>
+  <path d="M151 130 Q158 155 155 185" stroke-width="2"/>
+  <!-- Right hand reaching to bride -->
+  <path d="M155 185 Q165 192 175 195" stroke-width="2"/>
+  <!-- Body/torso -->
+  <path d="M85 130 L82 210" stroke-width="2"/>
+  <path d="M151 130 L154 210" stroke-width="2"/>
+  <!-- Waist -->
+  <path d="M82 210 Q118 220 154 210" stroke-width="2"/>
+  <!-- Legs -->
+  <path d="M95 218 L90 290 L96 290" stroke-width="2"/>
+  <path d="M141 218 L146 290 L152 290" stroke-width="2"/>
+  <!-- Shoes -->
+  <path d="M84 290 Q90 296 98 292" stroke-width="2"/>
+  <path d="M146 290 Q152 296 160 292" stroke-width="2"/>
+
+  <!-- Bride (right) -->
+  <!-- Crown/tiara -->
+  <path d="M190 48 L194 40 L200 50 L206 36 L212 50 L218 40 L222 48" stroke-width="1.8"/>
+  <!-- Head -->
+  <ellipse cx="206" cy="72" rx="22" ry="24" stroke-width="2"/>
+  <!-- Hair (long, wavy) -->
+  <path d="M184 65 Q186 48 206 50 Q226 48 228 65" stroke-width="2.5"/>
+  <path d="M184 70 Q180 100 182 130 Q184 148 188 158" stroke-width="2"/>
+  <path d="M228 70 Q232 100 232 130 Q232 150 230 165" stroke-width="2"/>
+  <!-- Neck -->
+  <line x1="206" y1="96" x2="206" y2="108" stroke-width="2"/>
+  <!-- Dress top / bodice -->
+  <path d="M185 120 Q190 108 206 108 Q222 108 221 120" stroke-width="2"/>
+  <!-- Neckline -->
+  <path d="M196 108 Q206 118 216 108" stroke-width="1.8"/>
+  <!-- Left arm reaching to groom -->
+  <path d="M185 120 Q174 135 168 145" stroke-width="2"/>
+  <!-- Right arm -->
+  <path d="M221 120 Q230 145 228 168" stroke-width="2"/>
+  <!-- Dress skirt (A-line, flowing) -->
+  <path d="M185 120 L170 210 L165 290" stroke-width="2"/>
+  <path d="M221 120 L238 210 L243 290" stroke-width="2"/>
+  <!-- Dress hem -->
+  <path d="M165 290 Q204 304 243 290" stroke-width="2"/>
+  <!-- Dress middle seam/flow lines -->
+  <path d="M206 130 L200 290" stroke-width="1.2" stroke-dasharray="0"/>
+  <!-- Waist detail -->
+  <path d="M185 155 Q206 162 227 155" stroke-width="1.5"/>
+
+  <!-- Joined hands in center -->
+  <path d="M175 195 Q170 200 168 205 Q166 210 170 212" stroke-width="2"/>
+  <path d="M168 145 Q163 170 163 190 Q163 202 170 212" stroke-width="2"/>
+
+  <!-- Small heart between them -->
+  <path d="M188 230 Q188 226 192 226 Q196 226 196 230 Q196 234 188 240 Q180 234 180 230 Q180 226 184 226 Q188 226 188 230" stroke-width="1.5" fill="#E8B4B8" stroke="#C4956A"/>
+
+  <!-- Decorative dots -->
+  <circle cx="155" cy="310" r="2" fill="#C4956A" stroke="none"/>
+  <circle cx="165" cy="318" r="1.5" fill="#C4956A" stroke="none"/>
+  <circle cx="148" cy="320" r="1.5" fill="#C4956A" stroke="none"/>
+</svg>

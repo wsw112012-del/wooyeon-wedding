@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 120" fill="none" stroke="#1C2B4A" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Left botanical branch -->
+  <path d="M0 110 Q30 80 60 70 Q80 64 95 60" stroke-width="1.5"/>
+  <!-- Left leaves -->
+  <path d="M25 95 Q35 82 45 88 Q38 96 25 95" stroke-width="1.2" fill="#1C2B4A" fill-opacity="0.08"/>
+  <path d="M45 80 Q58 68 68 76 Q60 84 45 80" stroke-width="1.2" fill="#1C2B4A" fill-opacity="0.08"/>
+  <path d="M68 68 Q82 58 90 66 Q82 74 68 68" stroke-width="1.2" fill="#1C2B4A" fill-opacity="0.08"/>
+  <!-- Left small flowers -->
+  <circle cx="95" cy="60" r="5" stroke-width="1.2"/>
+  <path d="M95 52 Q98 56 95 60 Q92 56 95 52" stroke-width="1" fill="#1C2B4A" fill-opacity="0.12"/>
+  <path d="M95 60 Q98 64 95 68 Q92 64 95 60" stroke-width="1" fill="#1C2B4A" fill-opacity="0.12"/>
+  <path d="M87 60 Q91 57 95 60 Q91 63 87 60" stroke-width="1" fill="#1C2B4A" fill-opacity="0.12"/>
+  <path d="M95 60 Q99 57 103 60 Q99 63 95 60" stroke-width="1" fill="#1C2B4A" fill-opacity="0.12"/>
+  <circle cx="95" cy="60" r="2" fill="#C4956A" stroke="none"/>
+
+  <!-- Left secondary branch -->
+  <path d="M55 90 Q65 70 80 55" stroke-width="1"/>
+  <path d="M62 78 Q72 66 78 72 Q70 80 62 78" stroke-width="1" fill="#1C2B4A" fill-opacity="0.07"/>
+  <circle cx="80" cy="55" r="3.5" stroke-width="1"/>
+  <circle cx="80" cy="55" r="1.5" fill="#C4956A" stroke="none"/>
+
+  <!-- Small berries on left -->
+  <circle cx="40" cy="88" r="2" fill="#C4956A" fill-opacity="0.5" stroke="none"/>
+  <circle cx="72" cy="72" r="2" fill="#C4956A" fill-opacity="0.5" stroke="none"/>
+
+  <!-- Right botanical branch (mirrored) -->
+  <path d="M360 110 Q330 80 300 70 Q280 64 265 60" stroke-width="1.5"/>
+  <!-- Right leaves -->
+  <path d="M335 95 Q325 82 315 88 Q322 96 335 95" stroke-width="1.2" fill="#1C2B4A" fill-opacity="0.08"/>
+  <path d="M315 80 Q302 68 292 76 Q300 84 315 80" stroke-width="1.2" fill="#1C2B4A" fill-opacity="0.08"/>
+  <path d="M292 68 Q278 58 270 66 Q278 74 292 68" stroke-width="1.2" fill="#1C2B4A" fill-opacity="0.08"/>
+  <!-- Right small flowers -->
+  <circle cx="265" cy="60" r="5" stroke-width="1.2"/>
+  <path d="M265 52 Q268 56 265 60 Q262 56 265 52" stroke-width="1" fill="#1C2B4A" fill-opacity="0.12"/>
+  <path d="M265 60 Q268 64 265 68 Q262 64 265 60" stroke-width="1" fill="#1C2B4A" fill-opacity="0.12"/>
+  <path d="M257 60 Q261 57 265 60 Q261 63 257 60" stroke-width="1" fill="#1C2B4A" fill-opacity="0.12"/>
+  <path d="M265 60 Q269 57 273 60 Q269 63 265 60" stroke-width="1" fill="#1C2B4A" fill-opacity="0.12"/>
+  <circle cx="265" cy="60" r="2" fill="#C4956A" stroke="none"/>
+
+  <!-- Right secondary branch -->
+  <path d="M305 90 Q295 70 280 55" stroke-width="1"/>
+  <path d="M298 78 Q288 66 282 72 Q290 80 298 78" stroke-width="1" fill="#1C2B4A" fill-opacity="0.07"/>
+  <circle cx="280" cy="55" r="3.5" stroke-width="1"/>
+  <circle cx="280" cy="55" r="1.5" fill="#C4956A" stroke="none"/>
+
+  <!-- Small berries on right -->
+  <circle cx="320" cy="88" r="2" fill="#C4956A" fill-opacity="0.5" stroke="none"/>
+  <circle cx="288" cy="72" r="2" fill="#C4956A" fill-opacity="0.5" stroke="none"/>
+
+  <!-- Center top small decoration -->
+  <path d="M175 5 Q180 0 185 5" stroke-width="1.2"/>
+  <circle cx="180" cy="8" r="3" stroke-width="1"/>
+  <circle cx="180" cy="8" r="1.2" fill="#C4956A" stroke="none"/>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 40" fill="none" stroke="#C4956A" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Left line -->
+  <line x1="0" y1="20" x2="105" y2="20" stroke-width="0.8" stroke-opacity="0.6"/>
+  <!-- Left small leaf -->
+  <path d="M100 20 Q108 14 116 20 Q108 26 100 20" stroke-width="1.2" fill="#C4956A" fill-opacity="0.15"/>
+  <!-- Left flower -->
+  <circle cx="128" cy="20" r="4" stroke-width="1.2"/>
+  <path d="M128 12 Q131 16 128 20 Q125 16 128 12" stroke-width="1" fill="#C4956A" fill-opacity="0.2"/>
+  <path d="M128 20 Q131 24 128 28 Q125 24 128 20" stroke-width="1" fill="#C4956A" fill-opacity="0.2"/>
+  <path d="M120 20 Q124 17 128 20 Q124 23 120 20" stroke-width="1" fill="#C4956A" fill-opacity="0.2"/>
+  <path d="M128 20 Q132 17 136 20 Q132 23 128 20" stroke-width="1" fill="#C4956A" fill-opacity="0.2"/>
+  <!-- Center diamond -->
+  <path d="M150 12 L158 20 L150 28 L142 20 Z" stroke-width="1.2" fill="#C4956A" fill-opacity="0.1"/>
+  <circle cx="150" cy="20" r="2" fill="#C4956A" stroke="none"/>
+  <!-- Right flower -->
+  <circle cx="172" cy="20" r="4" stroke-width="1.2"/>
+  <path d="M172 12 Q175 16 172 20 Q169 16 172 12" stroke-width="1" fill="#C4956A" fill-opacity="0.2"/>
+  <path d="M172 20 Q175 24 172 28 Q169 24 172 20" stroke-width="1" fill="#C4956A" fill-opacity="0.2"/>
+  <path d="M164 20 Q168 17 172 20 Q168 23 164 20" stroke-width="1" fill="#C4956A" fill-opacity="0.2"/>
+  <path d="M172 20 Q176 17 180 20 Q176 23 172 20" stroke-width="1" fill="#C4956A" fill-opacity="0.2"/>
+  <!-- Right small leaf -->
+  <path d="M184 20 Q192 14 200 20 Q192 26 184 20" stroke-width="1.2" fill="#C4956A" fill-opacity="0.15"/>
+  <!-- Right line -->
+  <line x1="195" y1="20" x2="300" y2="20" stroke-width="0.8" stroke-opacity="0.6"/>
+</svg>
