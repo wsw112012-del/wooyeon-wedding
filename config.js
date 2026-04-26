@@ -115,7 +115,7 @@ const WEDDING_CONFIG = {
 
   // ===== 공유 설정 =====
   // 배포 후 실제 URL로 변경하세요
-  shareUrl: 'https://wooyeon-wedding.netlify.app',
+  shareUrl: 'https://wooyeonwedding.cards',
   shareTitle: '우승우 ♡ 김라연 결혼합니다',
   shareDescription: '2026년 8월 22일 토요일 오후 6시 30분 빌라드지디 논현',
 };
