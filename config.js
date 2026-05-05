@@ -64,7 +64,7 @@ const WEDDING_CONFIG = {
 
   // ===== 사진 설정 =====
   showHeroPhoto: true,
-  heroBg: 'assets/images/hero.png',
+  heroBg: 'assets/images/hero.webp',
 
   // 갤러리 사진 목록
   gallery: [
