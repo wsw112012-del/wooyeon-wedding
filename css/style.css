@@ -54,112 +54,53 @@ button { font-family: inherit; cursor: pointer; }
 }
 
 /* ============================================
-   SECTION 1: HERO — Polaroid Style
+   SECTION 1: HERO — Full Poster Style
    ============================================ */
 #hero {
   width: 100%;
   max-width: var(--max-w);
   margin: 0 auto;
-  min-height: 100svh;
-  min-height: 100vh;
+  height: 100svh;
+  height: 100vh;
   position: relative;
-  background: var(--bg-soft);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 3rem var(--pad) 5rem;
   overflow: hidden;
+  background: #1a1a1a;
+  padding: 0;
+  display: block;
 }
 
-.hero-inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  width: 100%;
-}
-
-.hero-polaroid-row {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 0.9rem;
-}
-
-.hero-polaroid {
-  background: #fff;
-  padding: 10px 10px 0;
-  box-shadow:
-    0 2px 6px rgba(0,0,0,0.10),
-    0 10px 28px rgba(0,0,0,0.10);
-  transform: rotate(-1.5deg);
-  width: 100%;
-}
-
-.hero-photo {
-  width: 100%;
-  overflow: hidden;
+.hero-poster-wrap {
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .hero-poster-img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
   display: block;
 }
 
-.hero-sparkles {
+.hero-poster-overlay {
   position: absolute;
-  inset: 0;
-  pointer-events: none;
-}
-
-.sparkle {
-  position: absolute;
-  color: #d4a84b;
-  line-height: 1;
-  text-shadow: 0 0 10px rgba(212, 168, 75, 0.8), 0 0 20px rgba(212, 168, 75, 0.4);
-  animation: sparkle-twinkle 2.5s ease-in-out infinite;
-}
-
-.sp-1 { top:  5%; left:  7%;  font-size: 1.25rem; animation-delay: 0.0s; animation-duration: 2.2s; }
-.sp-2 { top:  8%; right: 9%;  font-size: 0.85rem; animation-delay: 0.5s; animation-duration: 2.8s; }
-.sp-3 { top:  3%; right:24%;  font-size: 0.65rem; animation-delay: 1.0s; animation-duration: 2.0s; }
-.sp-4 { top: 22%; left:  3%;  font-size: 0.75rem; animation-delay: 1.4s; animation-duration: 3.0s; }
-.sp-5 { top: 16%; right: 5%;  font-size: 0.60rem; animation-delay: 0.3s; animation-duration: 2.5s; }
-.sp-6 { bottom:20%; left:  5%; font-size: 0.90rem; animation-delay: 0.8s; animation-duration: 2.3s; }
-.sp-7 { bottom:12%; right: 8%; font-size: 0.70rem; animation-delay: 1.7s; animation-duration: 2.7s; }
-.sp-8 { bottom:32%; right:18%; font-size: 0.55rem; animation-delay: 0.6s; animation-duration: 2.1s; }
-.sp-9 { top: 38%; left: 10%;  font-size: 0.65rem; animation-delay: 1.2s; animation-duration: 2.4s; }
-
-@keyframes sparkle-twinkle {
-  0%, 100% { opacity: 0;   transform: scale(0.3) rotate(0deg);  }
-  45%, 55%  { opacity: 1;   transform: scale(1.0) rotate(20deg); }
-}
-
-
-.hero-caption-area {
-  padding: 0.6rem 0.5rem 0.75rem;
-  border-top: 1px solid rgba(0,0,0,0.06);
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 3.5rem var(--pad) 3rem;
   text-align: center;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.38) 0%, transparent 55%);
 }
 
-.hero-cap-date {
-  font-family: var(--font-ko);
-  font-size: 0.72rem;
-  color: var(--text);
-  letter-spacing: 0.05em;
-  line-height: 1.85;
-  white-space: pre-line;
-}
-
-.hero-cap-venue {
-  font-family: var(--font-ko);
-  font-size: 0.72rem;
-  color: var(--text-mute);
-  letter-spacing: 0.06em;
-  margin-top: 0.15rem;
+.hero-poster-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: clamp(2.5rem, 11vw, 3.4rem);
+  font-weight: 300;
+  color: #fff;
+  line-height: 1.18;
+  letter-spacing: 0.01em;
 }
 
 
