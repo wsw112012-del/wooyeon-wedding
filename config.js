@@ -68,28 +68,24 @@ const WEDDING_CONFIG = {
 
   // 갤러리 사진 목록
   gallery: [
-    // ── 야외 로맨틱 ──
-    'assets/images/gallery/photo4.jpg',   // 골든아워 첫인상
-    'assets/images/gallery/photo7.jpg',   // 나무 아래 밀착
-    'assets/images/gallery/photo6.jpg',   // 브라이덜 우아함
-    'assets/images/gallery/photo12.jpg',  // 나뭇잎 사이 조용한 둘만의 순간
-    'assets/images/gallery/photo9.jpg',   // 신랑 독사진
-    'assets/images/gallery/photo10.jpg',  // 신부 독사진
-    'assets/images/gallery/photo8.jpg',   // 둘이 함께
-    'assets/images/gallery/photo5.jpg',   // 자연스러운 캔디드
-    'assets/images/gallery/photo11.jpg',  // 반지 — 축하로 전환
-    // ── 야외 풍선 ──
-    'assets/images/gallery/photo3.jpg',
-    'assets/images/gallery/photo14.jpg',
-    'assets/images/gallery/photo15.jpg',
-    // ── 스튜디오 ──
-    'assets/images/gallery/photo18.jpg',  // 눈맞춤 — 따뜻한 시작
-    'assets/images/gallery/photo19.jpg',  // 브라이덜 우아함
-    'assets/images/gallery/photo2.jpg',   // 모래시계 친밀감
-    'assets/images/gallery/photo16.jpg',  // 캐주얼 밝음
-    'assets/images/gallery/photo1.jpg',   // 환한 웃음
-    'assets/images/gallery/photo17.jpg',  // 선물상자 장난기
-    'assets/images/gallery/photo13.jpg',  // 점프 — 경쾌한 마무리
+    'assets/images/gallery/photo1.webp',
+    'assets/images/gallery/photo2.webp',
+    'assets/images/gallery/photo3.webp',
+    'assets/images/gallery/photo4.webp',
+    'assets/images/gallery/photo5.webp',
+    'assets/images/gallery/photo6.webp',
+    'assets/images/gallery/photo7.webp',
+    'assets/images/gallery/photo8.webp',
+    'assets/images/gallery/photo9.webp',
+    'assets/images/gallery/photo10.webp',
+    'assets/images/gallery/photo11.webp',
+    'assets/images/gallery/photo12.webp',
+    'assets/images/gallery/photo13.webp',
+    'assets/images/gallery/photo14.webp',
+    'assets/images/gallery/photo15.webp',
+    'assets/images/gallery/photo16.webp',
+    'assets/images/gallery/photo17.webp',
+    'assets/images/gallery/photo18.webp',
   ],
 
   // ===== 계좌번호 =====
