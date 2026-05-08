@@ -113,7 +113,12 @@ function injectWeddingData() {
   }
 
   // Invitation
-  setText('invitation-text', c.invitationText);
+  var invEl = document.getElementById('invitation-text');
+  if (invEl) {
+    invEl.innerHTML = (c.invitationText || '')
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+      .replace('!', '<span class="inv-exclaim">!</span>');
+  }
   setText('groom-father',    c.groomFather);
   setText('groom-mother',    c.groomMother);
   setText('groom-name-full', c.groomName);

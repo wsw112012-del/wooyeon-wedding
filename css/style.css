@@ -241,6 +241,12 @@ section { padding: 4rem var(--pad); }
   white-space: pre-line;
   margin: 0 0 2.2rem;
 }
+.inv-exclaim {
+  color: #FFE234;
+  font-size: 1.35em;
+  line-height: 1;
+  vertical-align: middle;
+}
 .family-info {
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
