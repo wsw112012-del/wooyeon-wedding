@@ -394,17 +394,26 @@ function initMapLinks() {
 
   var mapEl = document.getElementById('venue-map-embed');
   if (mapEl && c.lat && c.lng) {
-    var src = 'https://maps.google.com/maps?q=' + c.lat + ',' + c.lng +
-              '&z=17&output=embed&hl=ko';
-    var iframe = document.createElement('iframe');
-    iframe.src = src;
-    iframe.width = '100%';
-    iframe.height = '300';
-    iframe.frameBorder = '0';
-    iframe.style.cssText = 'border:0;display:block;';
-    iframe.allowFullscreen = true;
-    iframe.loading = 'lazy';
-    mapEl.appendChild(iframe);
+    mapEl.style.height = '300px';
+    var script = document.createElement('script');
+    script.src = '//dapi.kakao.com/v2/maps/sdk.js?appkey=' + c.kakaoAppKey + '&autoload=false';
+    script.onload = function () {
+      kakao.maps.load(function () {
+        var map = new kakao.maps.Map(mapEl, {
+          center: new kakao.maps.LatLng(c.lat, c.lng),
+          level: 4,
+        });
+        var marker = new kakao.maps.Marker({
+          position: new kakao.maps.LatLng(c.lat, c.lng),
+          map: map,
+        });
+        var infoWindow = new kakao.maps.InfoWindow({
+          content: '<div style="padding:8px 12px;font-size:13px;font-family:\'Nanum Myeongjo\',serif;">' + c.venueName + '</div>',
+        });
+        infoWindow.open(map, marker);
+      });
+    };
+    document.head.appendChild(script);
   }
 }
 
