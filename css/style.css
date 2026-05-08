@@ -11,8 +11,8 @@
   --line:       #E8E3D7;
   --accent:     #1F1F1F;
 
-  --font-serif:     'Cormorant Garamond', 'Nanum Myeongjo', Georgia, serif;
-  --font-ko:        'Nanum Myeongjo', Georgia, serif;
+  --font-serif:     'Cormorant Garamond', 'SeoulHangang', Georgia, serif;
+  --font-ko:        'SeoulHangang', sans-serif;
   --font-handwrite: 'Nanum Pen Script', cursive;
   --font-sans:      'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
 
@@ -20,6 +20,13 @@
   --pad:    1.5rem;
   --radius: 8px;
   --ease:   cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@font-face {
+  font-family: 'SeoulHangang';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulHangangM.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* ---- Reset ---- */
@@ -146,13 +153,86 @@ section { padding: 4rem var(--pad); }
   color: var(--text-mute);
   text-transform: uppercase;
 }
+.sec-label--ko {
+  font-family: var(--font-ko);
+  font-style: normal;
+  letter-spacing: 0.05em;
+  font-size: 0.78rem;
+}
 
 .section-inner { text-align: center; }
 
 /* ============================================
    SECTION 2: INVITATION
    ============================================ */
-#invitation { text-align: center; }
+#invitation { text-align: center; position: relative; overflow: visible; }
+
+/* 꽃 장식 */
+.inv-floral { position: absolute; inset: 0; pointer-events: none; z-index: 0; }
+.inv-f { position: absolute; display: block; }
+
+/* 이름 블록 */
+.inv-names-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+  margin: 1.2rem 0 0.4rem;
+}
+.inv-name-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+.inv-name-role {
+  font-family: var(--font-ko);
+  font-size: 0.72rem;
+  color: var(--text-mute);
+  letter-spacing: 0.05em;
+}
+.inv-name-text {
+  font-family: var(--font-ko);
+  font-size: 1.45rem;
+  color: var(--text);
+  letter-spacing: 0.05em;
+}
+.inv-name-flower {
+  font-size: 1.1rem;
+  color: #F5C800;
+  line-height: 1;
+  margin-top: 1rem;
+}
+.inv-greeting {
+  font-family: var(--font-ko);
+  font-size: 0.85rem;
+  color: var(--text-mute);
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.03em;
+}
+
+.invitation-deco {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  margin: 1.4rem 0;
+}
+.invitation-deco::before,
+.invitation-deco::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: #FFE234;
+}
+.invitation-deco-diamond {
+  width: 6px;
+  height: 6px;
+  background: #FFE234;
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
 .invitation-text {
   font-family: var(--font-ko);
   font-size: 0.92rem;
@@ -201,7 +281,7 @@ section { padding: 4rem var(--pad); }
 /* ============================================
    SECTION 3: CALENDAR — Month grid
    ============================================ */
-#calendar-sec { text-align: center; padding: 2.5rem var(--pad); }
+#calendar-sec { text-align: center; padding: 2.5rem var(--pad); position: relative; overflow: visible; }
 .calendar-caption {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.2rem;
@@ -477,6 +557,66 @@ section { padding: 4rem var(--pad); }
   font-size: 0.82rem;
   color: var(--text-mute);
   line-height: 1.75;
+}
+
+.venue-map-img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.shuttle-table {
+  margin-top: 0.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.shuttle-row {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 0.9rem;
+  font-family: var(--font-ko);
+  font-size: 0.82rem;
+  gap: 0.8rem;
+}
+.shuttle-row + .shuttle-row {
+  border-top: 1px solid #e0e0e0;
+}
+.shuttle-time {
+  font-weight: 700;
+  color: var(--text);
+  white-space: nowrap;
+}
+.shuttle-info {
+  color: var(--text-mute);
+}
+
+.venue-notice-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.venue-notice-list li {
+  font-family: var(--font-ko);
+  font-size: 0.82rem;
+  color: var(--text-mute);
+  line-height: 1.65;
+  padding-left: 1rem;
+  position: relative;
+}
+.venue-notice-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--text);
+}
+.venue-notice-list strong {
+  color: var(--text);
+  font-weight: 700;
 }
 
 /* ============================================
