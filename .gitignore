@@ -1,1 +1,7 @@
 .claude/
+
+# Source images — deploy webp only
+assets/images/gallery/*.jpg
+assets/images/gallery/*.jpeg
+assets/images/gallery/*.png
+assets/images/hero.png
