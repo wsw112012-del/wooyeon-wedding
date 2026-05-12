@@ -408,9 +408,25 @@ function initMapLinks() {
           map: map,
         });
         var infoWindow = new kakao.maps.InfoWindow({
-          content: '<div style="box-sizing:border-box;width:113px;padding:8px 12px;font-size:13px;font-family:\'Noto Sans KR\',sans-serif;white-space:nowrap;line-height:1.4;text-align:center;">' + c.venueName + '</div>',
+          content: '<div data-iw="venue" style="padding:8px 12px;font-size:13px;font-family:\'Noto Sans KR\',sans-serif;white-space:nowrap;line-height:1.4;text-align:center;">' + c.venueName + '</div>',
         });
         infoWindow.open(map, marker);
+        // Kakao InfoWindow outer wrapper has a fixed width — force it to 115px.
+        function resizeIW() {
+          var inner = mapEl.querySelector('[data-iw="venue"]');
+          if (!inner) return;
+          var node = inner.parentElement;
+          while (node && node !== mapEl) {
+            var st = node.style;
+            if (st && st.border && st.background) {
+              node.style.width = '115px';
+              break;
+            }
+            node = node.parentElement;
+          }
+        }
+        setTimeout(resizeIW, 0);
+        setTimeout(resizeIW, 200);
       });
     };
     document.head.appendChild(script);
