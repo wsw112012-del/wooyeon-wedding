@@ -89,6 +89,7 @@ const WEDDING_CONFIG = {
     'assets/images/gallery/photo16.webp',
     'assets/images/gallery/photo17.webp',
     'assets/images/gallery/photo18.webp',
+    'assets/images/gallery/photo19.webp',
   ],
 
   // ===== 계좌번호 =====
