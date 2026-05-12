@@ -408,7 +408,7 @@ function initMapLinks() {
           map: map,
         });
         var infoWindow = new kakao.maps.InfoWindow({
-          content: '<div style="box-sizing:border-box;width:109.375px;height:37.391px;padding:8px 12px;font-size:13px;font-family:\'Noto Sans KR\',sans-serif;overflow:hidden;display:flex;align-items:center;justify-content:center;white-space:nowrap;">' + c.venueName + '</div>',
+          content: '<div style="padding:8px 12px;font-size:13px;font-family:\'Noto Sans KR\',sans-serif;white-space:nowrap;line-height:1.4;">' + c.venueName + '</div>',
         });
         infoWindow.open(map, marker);
       });
