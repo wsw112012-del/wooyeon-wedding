@@ -96,11 +96,11 @@ const WEDDING_CONFIG = {
   accounts: {
     groom: [
       { bank: '신한은행', number: '110-445-883849',   holder: '우승우' },
-      { bank: '신한은행', number: '110-000-000000',   holder: '우상정' },
-      { bank: '국민은행', number: '000000-00-000000', holder: '박민숙' },
+      { bank: '국민은행', number: '841501-04-054764', holder: '우상정' },
+      { bank: '국민은행', number: '034-24-0303-363', holder: '박민숙' },
     ],
     bride: [
-      { bank: '국민은행', number: '123456-78-901234', holder: '김라연' },
+      { bank: '하나은행', number: '150-910587-16107', holder: '김라연' },
       { bank: '우리은행', number: '000-000000-00-000', holder: '김경식' },
       { bank: '하나은행', number: '000-0000-0000-00',  holder: '문연숙' },
     ],
