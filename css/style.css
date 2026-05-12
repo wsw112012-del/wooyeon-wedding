@@ -822,7 +822,7 @@ section { padding: 4rem var(--pad); }
 }
 .btn-copy:hover, .btn-copy:active { background: var(--text); color: #FFF; }
 .account-holder {
-  font-size: 0.72rem;
+  font-size: 0.9rem;
   color: var(--text-mute);
   margin-top: 0.5rem;
   text-align: right;
