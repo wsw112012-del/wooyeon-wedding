@@ -30,7 +30,7 @@ async function doCopy(text, msg) {
   }
 }
 
-window.copyAccount = function(num) { doCopy(num, '계좌번호가 복사되었습니다'); };
+window.copyAccount = function(num) { doCopy(num.replace(/-/g, ''), '계좌번호가 복사되었습니다'); };
 
 /* ============================================================
    INJECT DATA

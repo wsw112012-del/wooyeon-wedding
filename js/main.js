@@ -567,7 +567,7 @@ function initMusicPlayer() {
 // ============================================================
 window.copyAccount = function (btn) {
   var row = btn.closest('.account-row');
-  if (row) doCopy(row.dataset.account, '계좌번호가 복사되었습니다 ✓');
+  if (row) doCopy(row.dataset.account.replace(/-/g, ''), '계좌번호가 복사되었습니다 ✓');
 };
 
 // ============================================================

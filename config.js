@@ -17,8 +17,8 @@ const WEDDING_CONFIG = {
   weddingTimeKo:   '오후 6시 30분',
 
   // ===== 연락처 =====
-  groomPhone: '010-0000-0000',   // 신랑 전화번호
-  bridePhone: '010-0000-0000',   // 신부 전화번호
+  groomPhone: '010-6766-4366',   // 신랑 전화번호
+  bridePhone: '010-2432-5798',   // 신부 전화번호
 
   // ===== 가족 정보 =====
   groomFather: '우상정',
@@ -28,12 +28,12 @@ const WEDDING_CONFIG = {
 
   // 혼주 연락처 (전화번호 없으면 phone: '' 로 비워두세요)
   groomParents: [
-    { relation: '아버지', name: '우상정', phone: '010-0000-0000' },
-    { relation: '어머니', name: '박민숙', phone: '010-0000-0000' },
+    { relation: '아버지', name: '우상정', phone: '010-2166-3689' },
+    { relation: '어머니', name: '박민숙', phone: '010-3218-3891' },
   ],
   brideParents: [
-    { relation: '아버지', name: '김경식', phone: '010-0000-0000' },
-    { relation: '어머니', name: '문연숙', phone: '010-0000-0000' },
+    { relation: '아버지', name: '김경식', phone: '010-6239-9082' },
+    { relation: '어머니', name: '문연숙', phone: '' },
   ],
 
   // ===== 청첩장 본문 =====
