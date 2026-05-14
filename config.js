@@ -33,7 +33,7 @@ const WEDDING_CONFIG = {
   ],
   brideParents: [
     { relation: '아버지', name: '김경식', phone: '010-6239-9082' },
-    { relation: '어머니', name: '문연숙', phone: '' },
+    { relation: '어머니', name: '문연숙', phone: '010-2710-5798' },
   ],
 
   // ===== 청첩장 본문 =====
