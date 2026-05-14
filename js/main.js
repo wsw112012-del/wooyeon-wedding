@@ -463,7 +463,7 @@ function initBottomBar() {
   document.getElementById('btn-kakao-share').addEventListener('click', function () {
     var c = WEDDING_CONFIG;
     var siteUrl  = c.shareUrl || location.origin;
-    var imageUrl = siteUrl + '/assets/images/og-image.png';
+    var imageUrl = siteUrl + '/assets/images/og-image.jpg';
 
     if (window.Kakao && Kakao.isInitialized()) {
       Kakao.Share.sendDefault({
