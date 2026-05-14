@@ -101,8 +101,8 @@ const WEDDING_CONFIG = {
     ],
     bride: [
       { bank: '하나은행', number: '150-910587-16107', holder: '김라연' },
-      { bank: '우리은행', number: '000-000000-00-000', holder: '김경식' },
-      { bank: '하나은행', number: '000-0000-0000-00',  holder: '문연숙' },
+      { bank: '우체국은행', number: '110-004-256612', holder: '김경식' },
+      { bank: '하나은행',  number: '402-910870-03007', holder: '문연숙' },
     ],
   },
 
