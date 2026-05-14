@@ -709,6 +709,7 @@ section { padding: 4rem var(--pad); }
   -webkit-tap-highlight-color: transparent;
 }
 .btn-parent-contact:active { background: var(--bg-soft); }
+.btn-parent-contact--disabled { opacity: 0.3; pointer-events: none; cursor: default; }
 
 /* ============================================
    CONTACT + GIFT COMBINED PANELS

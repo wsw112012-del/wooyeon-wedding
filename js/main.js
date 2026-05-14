@@ -244,16 +244,19 @@ function buildParentsPanel(panel) {
 
 function parentCard(p) {
   var clean = (p.phone || '').replace(/[^0-9]/g, '');
-  var btns = clean ? (
+  var cls = 'btn-parent-contact' + (clean ? '' : ' btn-parent-contact--disabled');
+  var telTag  = clean ? 'a href="tel:' + clean + '"' : 'span aria-disabled="true"';
+  var smsTag  = clean ? 'a href="sms:' + clean + '"' : 'span aria-disabled="true"';
+  var telEnd  = clean ? 'a' : 'span';
+  var btns =
     '<div class="parent-btns">' +
-      '<a class="btn-parent-contact" href="tel:' + clean + '" aria-label="전화">' +
+      '<' + telTag + ' class="' + cls + '" aria-label="전화">' +
         '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.06 1.22 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92v2z"/></svg>' +
-      '</a>' +
-      '<a class="btn-parent-contact" href="sms:' + clean + '" aria-label="문자">' +
+      '</' + telEnd + '>' +
+      '<' + smsTag + ' class="' + cls + '" aria-label="문자">' +
         '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="4" width="20" height="14" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>' +
-      '</a>' +
-    '</div>'
-  ) : '';
+      '</' + telEnd + '>' +
+    '</div>';
   return (
     '<div class="parent-card">' +
       '<div class="parent-info">' +
