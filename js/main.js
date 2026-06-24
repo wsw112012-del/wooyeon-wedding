@@ -4,6 +4,16 @@
 //  모바일 청첩장 메인 스크립트
 // ============================================================
 
+// 이미지 저장 방지
+(function () {
+  document.addEventListener('contextmenu', function (e) {
+    if (e.target.tagName === 'IMG') e.preventDefault();
+  });
+  document.addEventListener('dragstart', function (e) {
+    if (e.target.tagName === 'IMG') e.preventDefault();
+  });
+})();
+
 if (window.Kakao && !Kakao.isInitialized()) {
   Kakao.init(WEDDING_CONFIG.kakaoAppKey);
 }
