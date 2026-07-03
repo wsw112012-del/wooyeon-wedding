@@ -2,6 +2,14 @@
    모바일 청첩장 — Copenhagen Minimal
    ============================================ */
 
+/* 모든 이미지 저장/콜아웃 차단 (iOS 등) */
+img {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
 /* ---- Design Tokens ---- */
 :root {
   --bg:         #FFFFFF;
@@ -437,6 +445,16 @@ section { padding: 4rem var(--pad); }
   -webkit-user-drag: none;
   pointer-events: none;
 }
+/* 이미지 저장 방지용 투명 오버레이 (모바일 long-press 차단) */
+.img-guard {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
 .gallery-cell:hover img { transform: scale(1.04); }
 .gallery-cell:nth-child(6) img { transform: scale(1.14); object-position: center 18%; }
 .gallery-cell:nth-child(6):hover img { transform: scale(1.18); object-position: center 18%; }
@@ -475,7 +493,22 @@ section { padding: 4rem var(--pad); }
   -webkit-user-drag: none;
   -webkit-touch-callout: none;
   image-rendering: auto;
+  pointer-events: none;
 }
+/* 확대 이미지 위 투명 오버레이 (long-press 저장 차단) */
+.lightbox-guard {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next,
+.lightbox-counter { z-index: 2; }
 .lightbox-counter {
   font-family: 'Cormorant Garamond', serif;
   font-size: 0.72rem;

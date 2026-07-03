@@ -301,6 +301,7 @@ function initGallery() {
     return (
       '<div class="gallery-cell" data-index="' + i + '">' +
         '<img src="' + esc(src) + '" alt="사진 ' + (i + 1) + '" loading="lazy">' +
+        '<span class="img-guard"></span>' +
       '</div>'
     );
   }).join('');
@@ -341,7 +342,9 @@ document.addEventListener('DOMContentLoaded', function () {
   document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
   document.getElementById('lightbox-prev').addEventListener('click', function () { lightboxGo(-1); });
   document.getElementById('lightbox-next').addEventListener('click', function () { lightboxGo(+1); });
-  lb.addEventListener('click', function (e) { if (e.target === lb) closeLightbox(); });
+  lb.addEventListener('click', function (e) {
+    if (e.target === lb || e.target.classList.contains('lightbox-guard')) closeLightbox();
+  });
   document.addEventListener('keydown', function (e) {
     if (!lb.classList.contains('open')) return;
     if (e.key === 'Escape')      closeLightbox();
