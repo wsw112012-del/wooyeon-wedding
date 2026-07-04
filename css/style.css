@@ -89,7 +89,10 @@ button { font-family: inherit; cursor: pointer; }
 
 .hero-poster-img {
   width: 100%;
-  height: auto;
+  aspect-ratio: 2 / 3;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: block;
 }
 
@@ -433,31 +436,19 @@ section { padding: 4rem var(--pad); }
   position: relative;
   background: var(--bg-soft);
 }
-.gallery-cell img {
+/* <img> 대신 배경 이미지로 렌더 → long-press 저장 메뉴 원천 차단 */
+.gallery-photo {
   width: 100%; height: 100%;
-  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   transition: transform 0.35s ease;
-  image-rendering: -webkit-optimize-contrast;
   display: block;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  user-select: none;
-  -webkit-user-drag: none;
   pointer-events: none;
 }
-/* 이미지 저장 방지용 투명 오버레이 (모바일 long-press 차단) */
-.img-guard {
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-  background: transparent;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  user-select: none;
-}
-.gallery-cell:hover img { transform: scale(1.04); }
-.gallery-cell:nth-child(6) img { transform: scale(1.14); object-position: center 18%; }
-.gallery-cell:nth-child(6):hover img { transform: scale(1.18); object-position: center 18%; }
+.gallery-cell:hover .gallery-photo { transform: scale(1.04); }
+.gallery-cell:nth-child(6) .gallery-photo { transform: scale(1.14); background-position: center 18%; }
+.gallery-cell:nth-child(6):hover .gallery-photo { transform: scale(1.18); background-position: center 18%; }
 
 .gallery-empty {
   grid-column: 1 / -1;
@@ -483,27 +474,15 @@ section { padding: 4rem var(--pad); }
   flex-direction: column;
 }
 .lightbox.open { display: flex; }
+/* <img> 대신 배경 이미지 div → long-press 저장 메뉴 원천 차단 */
 .lightbox-img {
-  max-width: 95vw;
-  max-height: 85svh;
-  max-height: 85vh;
-  object-fit: contain;
-  user-select: none;
-  -webkit-user-select: none;
-  -webkit-user-drag: none;
-  -webkit-touch-callout: none;
-  image-rendering: auto;
+  width: 95vw;
+  height: 85svh;
+  height: 85vh;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   pointer-events: none;
-}
-/* 확대 이미지 위 투명 오버레이 (long-press 저장 차단) */
-.lightbox-guard {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background: transparent;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  user-select: none;
 }
 .lightbox-close,
 .lightbox-prev,

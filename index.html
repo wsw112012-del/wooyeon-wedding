@@ -28,7 +28,7 @@
   <!-- SECTION 1: HERO — Full Poster -->
   <section id="hero">
     <div class="hero-poster-wrap">
-      <img class="hero-poster-img" id="hero-poster-img" src="assets/images/hero.webp" alt="커플 사진">
+      <div class="hero-poster-img" id="hero-poster-img" role="img" aria-label="커플 사진" style="background-image:url('assets/images/hero.webp')"></div>
     </div>
     <div class="scroll-hint">
       <div class="scroll-line"></div>
@@ -145,8 +145,7 @@
   <!-- Lightbox -->
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
     <button class="lightbox-close" id="lightbox-close" aria-label="닫기">✕</button>
-    <img class="lightbox-img" id="lightbox-img" alt="갤러리 사진">
-    <span class="lightbox-guard" id="lightbox-guard"></span>
+    <div class="lightbox-img" id="lightbox-img" role="img" aria-label="갤러리 사진"></div>
     <button class="lightbox-prev" id="lightbox-prev" aria-label="이전">&#8249;</button>
     <button class="lightbox-next" id="lightbox-next" aria-label="다음">&#8250;</button>
     <p class="lightbox-counter" id="lightbox-counter"></p>

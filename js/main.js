@@ -119,7 +119,7 @@ function injectWeddingData() {
 
   if (c.heroBg) {
     var posterImg = document.getElementById('hero-poster-img');
-    if (posterImg) posterImg.src = c.heroBg;
+    if (posterImg) posterImg.style.backgroundImage = "url('" + c.heroBg + "')";
   }
 
   // Invitation
@@ -299,9 +299,8 @@ function initGallery() {
 
   grid.innerHTML = photos.map(function (src, i) {
     return (
-      '<div class="gallery-cell" data-index="' + i + '">' +
-        '<img src="' + esc(src) + '" alt="사진 ' + (i + 1) + '" loading="lazy">' +
-        '<span class="img-guard"></span>' +
+      '<div class="gallery-cell" data-index="' + i + '" role="img" aria-label="사진 ' + (i + 1) + '">' +
+        '<div class="gallery-photo" style="background-image:url(\'' + esc(src) + '\')"></div>' +
       '</div>'
     );
   }).join('');
@@ -316,7 +315,7 @@ function openLightbox(idx) {
   lightboxIdx = idx;
   var lb  = document.getElementById('lightbox');
   var img = document.getElementById('lightbox-img');
-  img.src = galleryPhotos[idx];
+  img.style.backgroundImage = "url('" + galleryPhotos[idx] + "')";
   updateLightboxCounter();
   lb.classList.add('open');
   document.body.style.overflow = 'hidden';
@@ -329,7 +328,7 @@ function closeLightbox() {
 
 function lightboxGo(delta) {
   lightboxIdx = (lightboxIdx + delta + galleryPhotos.length) % galleryPhotos.length;
-  document.getElementById('lightbox-img').src = galleryPhotos[lightboxIdx];
+  document.getElementById('lightbox-img').style.backgroundImage = "url('" + galleryPhotos[lightboxIdx] + "')";
   updateLightboxCounter();
 }
 
@@ -343,7 +342,7 @@ document.addEventListener('DOMContentLoaded', function () {
   document.getElementById('lightbox-prev').addEventListener('click', function () { lightboxGo(-1); });
   document.getElementById('lightbox-next').addEventListener('click', function () { lightboxGo(+1); });
   lb.addEventListener('click', function (e) {
-    if (e.target === lb || e.target.classList.contains('lightbox-guard')) closeLightbox();
+    if (e.target === lb || e.target.id === 'lightbox-img') closeLightbox();
   });
   document.addEventListener('keydown', function (e) {
     if (!lb.classList.contains('open')) return;
